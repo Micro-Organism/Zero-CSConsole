@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5E4524FA-80C6-4BC5-81F9-EF0378A96780}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Zero.ConsoleMain</RootNamespace>
+    <AssemblyName>Zero.ConsoleMain</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Zero.Algorithm\Zero.Algorithm.csproj">
+      <Project>{cbd81210-07d5-41e9-a312-cd1cb8048e67}</Project>
+      <Name>Zero.Algorithm</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Zero.DataBases\Zero.DataBases.csproj">
+      <Project>{67728efa-ff86-4f95-bbc7-70d9eddc69a7}</Project>
+      <Name>Zero.DataBases</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Zero.DelegateMain\Zero.DelegateMain.csproj">
+      <Project>{24efafea-ef15-4441-a878-7441040b9005}</Project>
+      <Name>Zero.DelegateMain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Zero.EventMain\Zero.EventMain.csproj">
+      <Project>{baed7ae9-176c-4a06-a768-5781352ac1b9}</Project>
+      <Name>Zero.EventMain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Zero.LeetCode\Zero.LeetCode.csproj">
+      <Project>{5241a266-65c6-41c1-be3a-b4438d9f1be4}</Project>
+      <Name>Zero.LeetCode</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Zero.MultiThread\Zero.MultiThread.csproj">
+      <Project>{461ea776-03f2-48d9-bcff-274ccc5596b0}</Project>
+      <Name>Zero.MultiThread</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
