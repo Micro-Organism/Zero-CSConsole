@@ -44,6 +44,13 @@ namespace Zero.ReflectionFrame
         /// <summary>
         ///  构造函数
         /// </summary>
+        public ReflectionHelper()
+        {
+
+        }
+        /// <summary>
+        ///  构造函数
+        /// </summary>
         /// <param name="url">定位（positional）参数</param>
         public ReflectionHelper(string url)
         {
