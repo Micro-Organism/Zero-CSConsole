@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Documents\C#设计模式.xmind" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Zero.Algorithm\Zero.Algorithm.csproj">
@@ -65,6 +66,14 @@
       <Project>{baed7ae9-176c-4a06-a768-5781352ac1b9}</Project>
       <Name>Zero.EventMain</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Zero.GenericFrame\Zero.GenericFrame.csproj">
+      <Project>{3b49e3b0-d38e-471e-b849-8370354f76b5}</Project>
+      <Name>Zero.GenericFrame</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Zero.Indexer\Zero.Indexer.csproj">
+      <Project>{d133818f-3f1c-465f-9efe-926341159d56}</Project>
+      <Name>Zero.Indexer</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Zero.LeetCode\Zero.LeetCode.csproj">
       <Project>{5241a266-65c6-41c1-be3a-b4438d9f1be4}</Project>
       <Name>Zero.LeetCode</Name>
@@ -73,6 +82,13 @@
       <Project>{461ea776-03f2-48d9-bcff-274ccc5596b0}</Project>
       <Name>Zero.MultiThread</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Zero.ReflectionFrame\Zero.ReflectionFrame.csproj">
+      <Project>{5ddb77df-d3d3-456e-9a3e-02b6976c987f}</Project>
+      <Name>Zero.ReflectionFrame</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\C#设计模式.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

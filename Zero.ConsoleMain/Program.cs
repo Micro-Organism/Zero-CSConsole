@@ -17,6 +17,10 @@ namespace Zero.ConsoleMain
 
             //EntityFramework.EntityFrameworkHelper.Instance.HelperRun();
 
+            //GenericFrame.GenericHelper.Instance.HelperRun();
+
+            Indexer.IndexerHelper.Instance.HelperRun();
+
             //Console.ReadKey();
         }
     }
