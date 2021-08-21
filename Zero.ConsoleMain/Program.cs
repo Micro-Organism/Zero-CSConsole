@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Threading;
 
 namespace Zero.ConsoleMain
@@ -19,9 +20,15 @@ namespace Zero.ConsoleMain
 
             //GenericFrame.GenericHelper.Instance.HelperRun();
 
-            Indexer.IndexerHelper.Instance.HelperRun();
+            //Indexer.IndexerHelper.Instance.HelperRun();
 
-            //Console.ReadKey();
+            //tests.Remove(tests.Find(t => t.MyProperty == 1));
+
+
+            
+
+            Console.ReadKey();
         }
+
     }
 }
